@@ -11,7 +11,7 @@
     "start": "bun tools/compile/index.ts development && expo start",
     "android": "bun tools/compile/index.ts development && expo run:android",
     "ios": "bun tools/compile/index.ts development && expo run:ios",
-    "export": "bun tools/compile/index.ts production && NODE_ENV=production expo export --platform android --output-dir .expo/export",
+    "export": "bun tools/export/index.ts",
     "check": "biome ci . && bun tools/core/index.ts",
     "fmt": "biome check --write .",
     "typecheck": "bun tools/compile/index.ts production && tsc --noEmit -p . && tsc --noEmit -p tsconfig.tools.json",
@@ -25,7 +25,7 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-native/assets-registry": "0.86.3",
-    "engine": "git+https://github.com/comstrx/bunx.git#v0.0.2",
+    "engine": "git+https://github.com/comstrx/bunx.git#v0.1.1",
     "expo": "57.0.27",
     "expo-build-properties": "57.0.22",
     "expo-constants": "57.0.21",
