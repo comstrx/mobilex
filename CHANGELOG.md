@@ -2,6 +2,10 @@
 
 Every release of MobileX.
 
+## v0.1.2 — 2026-10-18
+
+- `bun run export --all` exports every installed spec.
+
 ## v0.1.1 — 2026-10-17
 
 - The demo spec is gone: `admin` and `client` are the two apps.
